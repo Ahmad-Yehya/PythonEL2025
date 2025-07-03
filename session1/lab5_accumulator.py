@@ -1,9 +1,15 @@
-"""Sum 1 … n — Compute and display the running total."""
+'''Sum 1 … n — Compute and display the running total.'''
 
 
 def compute(number):
-    """write your soulution Here Sum 1 … n — Compute and display the running total."""
+    '''write your soulution Here Sum 1 … n — Compute and display the running total.'''
+    accu = 0
+    my_range = range(1, number+1)
+    for i in my_range:
+        accu+=i
+    return accu
 
+print(compute(0))
 
 if __name__ == "__main__":
     assert compute(5) == 15, "Test case failed"

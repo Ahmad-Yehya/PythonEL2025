@@ -1,9 +1,15 @@
-"""Write a Python program to count the number 4 in a given list."""
-
+'''Write a Python program to count the number 4 in a given list.'''
 
 def count(lst):
-    """Write your solution here. Don't forget to return the result at the end...."""
+    '''Write your solution here. Don't forget to return the result at the end....'''
+    counter = 0
+    for i in lst:
+        if i == 4 :
+            counter += 1
 
+    return counter
+
+print(count([4,4,4,4,4]))
 
 if __name__ == "__main__":
     assert count([1, 2, 3, 4, 5, 4, 6]) == 2, "Test case failed"
